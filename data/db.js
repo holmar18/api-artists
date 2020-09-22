@@ -7,7 +7,6 @@ const customerSchema = require('../schemas/customer');
 
 const connection = mongoose.createConnection('mongodb+srv://holmar:holmar123@cluster0.liw9p.mongodb.net/Mansion', { useNewUrlParser: true });
 
-
 module.exports = {
     Art: connection.model('Art', artSchema),
     Artist: connection.model('Artist', artistSchema),
