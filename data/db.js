@@ -7,6 +7,7 @@ const customerSchema = require("../schemas/customer");
 
 const connection = mongoose.createConnection("link goes here", {
   useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
 
 module.exports = {
